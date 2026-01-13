@@ -83,7 +83,7 @@ section{
 span{
     color: var(--support-color);
 }
-.btn a{
+.button,.btn a{
     margin: 2rem;
     padding: 1rem 2rem;
     display: inline-block;
@@ -234,4 +234,30 @@ i{
     background-color: var(--secondary-color);
     font-size: 1.5rem;
     border-radius: 50%;
+}
+.contact-info{
+    font-size: 1.5rem; 
+    line-height: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.contact-info .gmail{
+    font-size: 2rem;
+}
+form{
+    box-shadow: 0 0 2rem var(--secondary-color);
+    border: var(--text-color) solid;
+    padding: 4rem;
+    justify-content: space-between;
+}
+form .sender-gmail,.sender-subject,.sender-message{
+    background: var(--bg-color);
+    color: var(--support-color);
+    min-width: 40%;
+    font-size: 1.4rem;
+    margin: 1.2rem;
+    transition: 0.3s ease-in;
+}
+form .senser-gmail:active,.sender-subject:active,.sender-message:active{
+    transform: scale(1.02);
 }
