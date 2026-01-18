@@ -60,15 +60,15 @@ section{
    
 }
 .about-bio1 img{
-    max-width: 30vh;
+    max-width: 40vh;
     max-height: 30vh;
-    border-radius: 100%;
+    border-radius: 90%;
     box-shadow: 0 0 3rem var(--support-color);
 }
 .about-name{
-    font-size: medium;
+    font-size: small;
     color: var(--text-color);
-    font-weight: 600;
+    font-weight: 800;
     text-align: center;
     margin: 1rem;
 }
@@ -225,7 +225,7 @@ i{
     border-radius: 50%;
     background-color: var(--support-color);
     border: var(--secondary-color) solid;
-    padding: 1rem;
+    padding: 2rem;
     cursor: pointer;
     font-size: 3rem;
     color: var(--secondary-color);
@@ -247,7 +247,7 @@ i{
 form{
     box-shadow: 0 0 2rem var(--secondary-color);
     border: var(--text-color) solid;
-    padding: 4rem;
+    padding: 5rem;
     justify-content: space-between;
 }
 form .sender-gmail,.sender-subject,.sender-message{
@@ -258,6 +258,49 @@ form .sender-gmail,.sender-subject,.sender-message{
     margin: 1.2rem;
     transition: 0.3s ease-in;
 }
-form .senser-gmail:active,.sender-subject:active,.sender-message:active{
-    transform: scale(1.02);
+form .sender-gmail:active,.sender-subject:active,.sender-message:active{
+    transform: scale(1.06);
+}
+form textarea{
+    width: 80%;
+}
+/*to fit with phone screen side*/
+
+#menu-icon{
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:700px) {
+    .proj{    
+    grid-template-columns: repeat(1,1fr);   
+ } 
+   
+ .about{
+    flex-wrap: wrap-reverse;
+ }
+#menu-icon{
+    display: block;
+ }
+.nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0,0,0,0.2);
+    display: none;
+    
+ }
+ .nav.active{
+    display: flex;
+    flex-direction: column;
+ }
+ .nav a{
+    display: block;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+ }
 }
