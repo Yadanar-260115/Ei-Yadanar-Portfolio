@@ -247,7 +247,7 @@ i{
 form{
     box-shadow: 0 0 2rem var(--secondary-color);
     border: var(--text-color) solid;
-    padding: 5rem;
+    padding: 6rem;
     justify-content: space-between;
 }
 form .sender-gmail,.sender-subject,.sender-message{
